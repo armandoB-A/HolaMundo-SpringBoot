@@ -14,8 +14,8 @@ public class DemoApplication {
 		SpringApplication.run(DemoApplication.class, args);
 	}
 
-	@GetMapping("/saludo-personalizado")
-	public String name(@RequestParam(value = "nombre") String nombre) {
-		return "salu2 "+nombre;
+	@GetMapping("/suma")
+	public String suma(@RequestParam(value = "num1") int num1) {
+		return "La suma es de: "+(num1+num1);
 	}
 }
